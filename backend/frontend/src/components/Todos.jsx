@@ -30,7 +30,7 @@ export default function Todos() {
     }
     useEffect(() => {
         fetchTodos()
-    }, [])
+    }, [todos])
     return (
         <TodoContext.Provider value={{todos, fetchTodos}}>
             <stack spacing={5}>

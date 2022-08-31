@@ -1,7 +1,7 @@
 import React from "react";
 import { Heading, Flex, Divider } from "@chakra-ui/react";
 
-const Header = () => {
+const App = () => {
   return (
     <Flex
       as="nav"
@@ -19,4 +19,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default App;
