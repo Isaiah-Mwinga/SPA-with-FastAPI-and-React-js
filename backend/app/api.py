@@ -41,3 +41,10 @@ async def add_todo(todo: dict) -> dict:
     return {
         "data": {"Todo added."}
     }    
+
+@app.post("/todo", tags=["todos"])
+async def add_todo(todo: dict) -> dict:
+    todos.append(todo)
+    return {
+        "data": {"Todo added"}
+    }
